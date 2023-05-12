@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: lightcyan;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+}
