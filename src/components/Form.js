@@ -1,4 +1,4 @@
-import classes from "/Users/indianic/Desktop/validation/src/components/Form.module.css";
+import classes from "../components/Form.module.css";
 import { useState } from "react";
 
 const Form = (props) => {

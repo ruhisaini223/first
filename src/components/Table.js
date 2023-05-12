@@ -1,12 +1,9 @@
 import React from "react";
-import "/Users/indianic/Desktop/validation/src/components/Table.module.css";
+import "../components/Table.module.css";
 
 function Table(props) {
   const delHandler = (id) => {
     props.onDelete(id);
-  };
-  const handleEdit = (rowData) => {
-    props.onEdit(rowData);
   };
 
   return (
@@ -31,7 +28,7 @@ function Table(props) {
             <th>{item.phone}</th>
 
             <th>
-              <button onClick={() => handleEdit(item)}>Edit</button>{" "}
+              <button>Edit</button>{" "}
               <button onClick={() => delHandler(item.id)}>Delete</button>
             </th>
           </tr>

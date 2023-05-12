@@ -4,9 +4,7 @@ import Table from "./components/Table";
 
 function App() {
   const [forward, setForward] = useState([]);
-  const handleEdit = (data) => {
-    setForward(data);
-  };
+
   const itemHandler = (prev) => {
     setForward([...prev, ...forward]);
   };
@@ -18,7 +16,7 @@ function App() {
     <div>
       <Form onSave={itemHandler} />
 
-      <Table forwarding={forward} onDelete={handleDelete} onEdit={handleEdit} />
+      <Table forwarding={forward} onDelete={handleDelete} />
     </div>
   );
 }
